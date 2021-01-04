@@ -494,6 +494,12 @@
     height: 43px;
     border-top-right-radius: 10px;
     background: #fff;
+    line-height: 43px;
+    text-indent: 17px;
+    font-size: 14px;    
+    color: #777777;
+    overflow: hidden;
+    border-bottom:1px solid #eeeeee;
 }
 
 .mni3x{
@@ -502,33 +508,104 @@
     height: 43px;
     border-bottom-right-radius: 10px;
     background: #fff;
-    display: none;
-
-}
-
-.mni3s>ul{
-    float: left;
-    width: 266px;
-    height: 43px;
-    border-top-right-radius: 10px;
-    background: #fff;
-    overflow: hidden;
     line-height: 43px;
     text-indent: 17px;
     font-size: 14px;    
     color: #777777;
+    
+}
+
+.mni3x>ul>li>a{
+    line-height: 43px;
+    text-indent: 17px;
+    font-size: 14px;    
+    color: #777777;
+    font-size: 12px;
+}
+
+.mni3s>ul{
+    float: right;
+    width: 177px;
+    height: 43px;
+    border-top-right-radius: 10px;
+    background: #fff;
+    overflow: hidden;
+    margin-right: 35px;
 }
 
 .mni3s>ul>li{
-    float: right;
-    width: 170px;
-    height: 43px;
     line-height: 43px;
     font-size: 12px;
-    color: #777777;
-    margin-right: 46px;
+    color: #777777;    
 }
 
 .mni3x>ul>li{
     float: left;
 }
+
+.mni3x>ul>li:nth-of-type(1)>span{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url(https://res.vmallres.com/pimages//squaredInfo/icon/5/2a452696306aa89df074ac502d14365d.png) no-repeat;
+    background-size: 300px 40px;
+    background-position: -243px -3px;
+}
+
+.mni3x>ul>li:nth-of-type(2)>span{
+    display: inline-block;
+    width: 16px;
+    height: 12px;
+    background: url(https://res.vmallres.com/pimages//squaredInfo/icon/5/2a452696306aa89df074ac502d14365d.png) no-repeat;
+    background-size: 300px 40px;
+    background-position: -262px -4px;
+}
+
+.mni3x>ul>li:nth-of-type(3)>span{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: url(https://res.vmallres.com/pimages//squaredInfo/icon/5/2a452696306aa89df074ac502d14365d.png) no-repeat;
+    background-size: 300px 40px;
+    background-position: -283px -3px;
+}
+
+#sell1{
+    height: 200px;
+}
+
+.sell1_inner>ul{
+    float: left;
+}
+
+.sell1_inner>ul>li{
+    float: left;
+}
+
+
+
+.sell1_inner ul li a img{
+    display: inline-block;
+    width: 290px;
+    height: 200px;
+    border-radius: 8px;
+    margin-right: 13px;
+    margin-bottom: 26px;
+    transition: all .2s linear 0s;
+}
+
+.sell1_inner ul li:last-child>a>img{
+    margin-right: 0px;
+}
+
+.sell1_inner>ul>li>a>img:hover{
+    box-shadow: 0 12px 36px rgba(0,0,0,0.1);
+}
+
+
+#sell2{
+    height: 668px;
+}
+
+
+
