@@ -728,3 +728,152 @@
     line-height: 21px;
     margin-bottom: 0;
 }
+
+.sell3{
+    height: 400px;
+}
+
+.sell3_inner>h2{
+    margin-top:26px ;
+    font-size: 26px;
+    line-height: 26px;
+    color: #333333;
+    margin-bottom: 14px;
+}
+
+.sell3_box{
+    overflow: hidden;
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.sell3_box>ul{
+    min-width: 1200px;
+    height: 295px;
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+
+.sell3_box>ul>li{
+    float: left;
+    width: 230px;
+    height: 300px;
+    text-align: center;
+}
+
+.sell3_box>ul>li{
+    margin-right: 12px;
+}
+
+.sell3_box>ul>li:nth-child(5n){
+    margin-right:0;
+}
+
+.sell3_box>ul>li>a>div{
+    width: 230px;
+    height: 205px;
+    margin: 0 auto;
+    background: #fff;
+    padding-top: 36px;
+    border-radius: 10px;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.06);
+    transition: all .2s linear 0s;
+}
+
+.sell3_box>ul>li>a>div{
+    position: relative;
+}
+
+.sell3_box>ul>li>a>div>img{
+    width: 150px;
+    height: 150px;
+}
+
+.sell3_box>ul>li>a>div>p{
+    font-size: 14px;
+    line-height: 36px;
+    padding: 0 10px;
+    border-radius: 0 0 10px 10px;
+    position: absolute;
+    top: 206px;
+    width: 210px;
+    left: 0;
+    background: #f3f3f3;
+    color: #777;
+    margin: 0;
+}
+
+.sell3_box>ul>li>a>strong{
+    width: 230px;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    margin-top: 9px;
+    height: 24px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.sell3_box>ul>li>a>span{
+    line-height: 18px;
+    color: #d0021b;
+    margin-bottom: 0;
+}
+
+
+.sell3_box{
+    position: relative;
+}
+
+.btn-next{
+    line-height: 18px;
+    color: #d0021b;
+    margin-bottom: 0;
+}
+
+
+
+.btn-prev{
+    display: block;
+    margin-top: 0;
+    left: 0px;
+    border-radius: 0 8px 8px 0;
+    width: 36px;
+    height: 72px;
+    top: 101px;
+    background: rgba(0,0,0,0.06);
+    text-align: center;
+    position: absolute;
+    z-index: 3;
+}
+
+.btn-prev>span{
+    display: block;
+    margin: 28px auto;
+    height: 16px;
+    width: 11px;
+    background:url(../images/icon_left.png)  no-repeat;
+}
+
+.btn-next{
+    display: block;
+    margin-top: 0;
+    right: 2px;
+    border-radius: 8px 0 0 8px;
+    width: 36px;
+    height: 72px;
+    top: 101px;
+    background: rgba(0,0,0,0.06);
+    text-align: center;
+    position: absolute;
+    z-index: 3;
+}
+
+.btn-next>span{
+    display: block;
+    margin: 28px auto;
+    height: 16px;
+    width: 11px;
+    background:url(../images/icon_right.png)  no-repeat;
+}

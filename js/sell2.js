@@ -25,11 +25,11 @@ function showList(){
                 //这里的选择器,必须要选到你想指的那个子元素
                 $('.sell2_bigbox>ul>li').hover(
                     function(){
-                        console.log(22)
+                        // console.log(22)
                         $(this).addClass('current')
                     },
                     function(){
-                        console.log(33)
+                        // console.log(33)
                         $(this).removeClass('current')
                     }
                     
