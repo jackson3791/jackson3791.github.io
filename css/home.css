@@ -529,7 +529,7 @@
     background: #fff;
     overflow: hidden;
     margin-right: 35px;
-    margin-left: 45px;  
+    margin-left: 42px;  
 }
 
 .mni3s>ul>li{
@@ -606,5 +606,122 @@
     height: 668px;
 }
 
+.sell2_inner>h2{
+    font-size: 26px;
+    line-height: 26px;
+    color: #333333;
+    margin-bottom: 14px;
+}
+
+.bigbig_box{
+    height:668px;
+}
+
+.sell2_bigbox{
+    float: left;
+    width: 968px;
+}
+
+.sell2_bigbox>ul{
+    float: left;
+}
+
+.sell2_bigbox>ul>li{
+    float: left;
+}
 
 
+
+.sell2_bigbox ul li {
+    transition: all .2s linear 0s;
+}
+
+.sell2_leftimg{
+    float: left;
+}
+
+.bigbig_box>.sell2_leftimg>a>img{
+    float: left;
+    width: 230px;
+    height: 592px;
+    border-radius: 10px;
+}
+
+.current{
+    -webkit-box-shadow: 0 10px 15px rgba(0,0,0,0.07);
+    -moz-box-shadow: 0 10px 15px rgba(0,0,0,0.07);
+    box-shadow: 0 10px 15px rgba(0,0,0,0.07);
+    -webkit-transform: translate3d(0px,-2px,0px);
+    -moz-transform: translate3d(0px,-2px,0px);
+    -ms-transform: translate3d(0px,-2px,0px);
+    -o-transform: translate3d(0px,-2px,0px);
+    transform: translate3d(0px,-2px,0px);
+    z-index: 2;
+    box-shadow:0 12px 36px rgba(0,0,0,0.1);
+}
+
+.sell2_bigbox>ul>li>a>img:hover{
+    -webkit-box-shadow: 0 10px 15px rgba(0,0,0,0.07);
+    -moz-box-shadow: 0 10px 15px rgba(0,0,0,0.07);
+    box-shadow: 0 10px 15px rgba(0,0,0,0.07);
+    -webkit-transform: translate3d(0px,-2px,0px);
+    -moz-transform: translate3d(0px,-2px,0px);
+    -ms-transform: translate3d(0px,-2px,0px);
+    -o-transform: translate3d(0px,-2px,0px);
+    transform: translate3d(0px,-2px,0px);
+    z-index: 2;
+}
+
+.sell2_bigbox .grid-title{
+    width: 210px;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    margin-top: 12px;
+    height: 21px;
+    line-height: 21px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.sell2_bigbox .grid-items{
+    width: 230px;
+    height: 290px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    margin-left: 12px;
+    margin-bottom: 12px;
+    margin-top: 0;
+}
+
+.sell2_bigbox .thumb{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.sell2_bigbox .grid-img{
+    width: 150px;
+    height: 150px;
+    margin: 35px auto 0;
+}
+
+.sell2_bigbox .grid-img img{
+    width: 150px;
+    height: 150px;
+}
+
+.sell2_bigbox .grid-desc{
+    color: #777;
+    line-height: 18px;
+    padding: 0 10px;
+    margin: 2px 20px 7px;
+}
+
+.sell2_bigbox .grid-price{
+    color: #d0021b;
+    line-height: 21px;
+    margin-bottom: 0;
+}
