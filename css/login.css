@@ -211,7 +211,7 @@
 
 .foot_text>span{
     color: #000000;
-    font-size: 12px;
+    font-size: 14px;
     padding: 0 16px;
 }
 
@@ -222,6 +222,6 @@
 .footer_inner>p{
     text-align: center;
     margin-top: 12px;
-    font-size:12px ;
+    font-size:14px ;
     color: #aaaaaa;
 }

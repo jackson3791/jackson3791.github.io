@@ -1,0 +1,302 @@
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* 头部 */
+
+#header{
+    height: 48px;
+    background: #f2f2f2;
+}
+
+.header_inner{
+    position: relative;
+}
+
+.header_inner>img{
+    display: inline-block;
+    width: 108px;
+    height: 28px;
+    padding-right:16px ;
+    margin-top: -9px;
+}
+
+.header_inner>span{
+    display: inline-block;
+    font-size: 16px;
+    color: #191919;
+    line-height: 48px;
+    font-weight: bold;
+    margin-left: 16px;
+}
+
+.head_line{
+    position: absolute;
+    width: 1px;
+    height: 20px;
+    background:#c2c2c2 ;
+    left: 110px;
+    top: 14px;
+}
+
+#main{
+    height: 730px;
+}
+
+
+/* 底部 */
+#footer{
+    height:110px ;
+    background:#f2f2f2 ;
+}
+
+.footer_inner{
+    border-top: 1px solid #f2f2f2 ;
+}
+
+.foot_text{
+    text-align: center;
+    margin-top: 37px;
+    color: #e6d9d9;
+}
+
+.foot_text>span{
+    color: #000000;
+    font-size: 14px;
+    padding: 0 16px;
+}
+
+.foot_text>span:not(:last-of-type){
+    border-right: 1px solid #e6d9d9;
+}
+
+.footer_inner>p{
+    text-align: center;
+    margin-top: 12px;
+    font-size:14px ;
+    color: #aaaaaa;
+}
+
+#main{
+    height: 788px;
+}
+
+.main_inner{
+    padding-top: 78px;
+    position: relative;
+    text-align: center;
+}
+
+.main_nav>ul>li>i{
+    margin-right: 10px;
+}
+
+.main_nav>ul{
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-align: left;
+}
+
+.main_nav>ul{
+    margin-top: 40px;
+}
+
+.main_nav>ul>li:nth-of-type(1){
+    background:#f2f2f2 
+}
+
+.main_nav>ul>li{
+    display: block;
+    width: 272px;
+    height: 50px;
+    border-radius: 6px;;
+    line-height: 50px;
+    text-indent: 44px;
+    color: #191919;
+    cursor: pointer;
+}
+
+.main_shoujire>h2{
+    font-size: 30px;
+    color: #191919;
+    margin-bottom: 15px;
+}
+
+.main_shoujire>span{
+    font-size: 16px;
+    color: #191919;
+}
+
+.main_shoujire>span>a{
+    color: #007dff;
+}
+
+.main_inputbox{
+    display: block;
+    width: 442px;
+    margin: 63px auto 0;
+}
+
+.main_inputbox>div{
+    width: 425px;
+    height: 50px;
+    background:#f2f2f2 ;
+    border-radius: 6px;
+    text-indent: 18px;
+    margin-bottom: 28px;
+    padding-right: 17px;
+}
+
+.main_input1>span{
+    float: left;
+    height: 50px;
+    width: 80px;
+    line-height: 50px;
+    font-size: 12px;
+}
+
+.main_input1>select{
+    float: right;
+    width: 55px;
+    height: 50px;
+    border: none;
+    outline: none;
+    background: #f2f2f2;
+}
+.main_input2{
+    position: relative;
+}
+.main_input2>select{
+    float: left;
+    width: 85px;
+    height: 50px;
+    border: none;
+    outline: none;
+    background: #f2f2f2;
+    margin-left: 18px;
+}
+
+.main_input2::after{
+    display: block;
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 27px;
+    background: #d9d9d9;
+    left:125px ;
+    top: 13px;
+}
+
+.main_input2>input{
+    width: 298px;
+    height: 50px;
+    background: #f2f2f2;
+    border: none;
+    outline: none;
+    text-indent: 25px;
+}
+
+.main_input3>input{
+    float: left;
+    height: 50px;
+    width: 336px;
+    border: none;
+    outline: none;
+    background: #f2f2f2;
+    text-indent: 18px;
+    border-radius: 6px;
+}
+
+.main_input3>a{
+    float: right;
+    width: 78px;
+    height: 50px;
+    background: #f2f2f2;
+    line-height: 50px;
+    color: #97c6f7;
+    font-size: 12px;
+}
+
+.main_input4>input{
+    float: left;
+    height: 50px;
+    width: 336px;
+    border: none;
+    outline: none;
+    background: #f2f2f2;
+    text-indent: 18px;
+    border-radius: 6px;
+}
+.main_input4{
+    position: relative;
+}
+
+.main_input4>i{
+    position: absolute;
+    font-size: 22px;
+    top:15px ;
+    right: 17px;
+    color: #979797;
+}
+
+.main_input5>input{
+    float: left;
+    height: 50px;
+    width: 336px;
+    border: none;
+    outline: none;
+    background: #f2f2f2;
+    text-indent: 18px;
+    border-radius: 6px;
+}
+
+.main_input5{
+    position: relative;
+}
+
+.main_input5>i{
+    position: absolute;
+    font-size: 22px;
+    top:15px ;
+    right: 17px;
+    color: #979797;
+}
+
+.main_input6>span{
+    float: left;
+    width: 74px;
+    height: 50px;
+    line-height: 50px;
+    background: #f2f2f2;
+    color: #191919;
+    border-radius:6px ;
+}
+
+.main_input6>div{
+    float: right;
+}
+.main_input6>div>select{
+    width: 55px;
+    height: 50px;
+    background: #f2f2f2;
+    border: none;
+    outline: none;
+}
+
+.main_input6>div>select:nth-of-type(1){
+    width: 68px;
+}
+
+.main_inputbox>button{
+    width: 308px;
+    height: 48px;
+    line-height: 48px;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid #ececec;
+    border-radius: 6px;
+    background: #9fceff;
+}
