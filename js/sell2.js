@@ -19,8 +19,7 @@ function showList(){
                         <p class="grid-desc">${sell2_2.sell2_desc2}</p>
                         <p class="grid-price">${sell2_2.sell2_price2}</p>
                     </a>
-                </li>
-                        `)
+                     </li>`)
                 });
                 
                 //这里的选择器,必须要选到你想指的那个子元素
