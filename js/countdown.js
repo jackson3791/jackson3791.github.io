@@ -1,6 +1,10 @@
 
-  var endDate=new Date().getTime()+1000*10*60*60+1000*8*60;
-    // console.log(endDate)
+  var lefthour = 23-(new Date()).getHours();
+  var leftminutes = 59- (new Date()).getMinutes();
+  var leftseconds = 59 - (new Date()).getSeconds();
+
+  var endDate=Date.now()+((lefthour+10)*1000*60*60)+leftminutes*1000*60+leftseconds*1000+1000*8*60;
+
 
  var  t1 = setInterval(function countDown(){
     $('.countdowntime').empty();

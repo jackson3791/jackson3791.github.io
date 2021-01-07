@@ -66,39 +66,61 @@
                         <th>小计</th>
                         <th>操作</th>
                     </tr>
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td>
-                            <img class="img-thumbnail" src="https://res.vmallres.com/pimages//product/6901443385447/428_428_7CD68748A91AF52FC4E79DBC1D9342A00692113D85BE33E3mp.png" alt="">
-                        </td>
-                        <td class="car-deatil">HUAWEI Sound X 智能音箱（白金版）帝瓦雷60W双低音炮 Hi-Res无损音质 一碰传音 智慧空间感知 振动平衡技术 海量音源丰富内容</td>
-                        <td>¥1999.0</td>
-                        
-                        <td>1</td>
-                        <td>¥1999.0</td>
-                        <td>
-                            <button class="btn btn-danger">删除</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td>
-                            <img class="img-thumbnail" src="https://res.vmallres.com/pimages//product/6901443385447/428_428_7CD68748A91AF52FC4E79DBC1D9342A00692113D85BE33E3mp.png" alt="">
-                        </td>
-                        <td class="car-deatil">HUAWEI Sound X 智能音箱（白金版）帝瓦雷60W双低音炮 Hi-Res无损音质 一碰传音 智慧空间感知 振动平衡技术 海量音源丰富内容</td>
-                        <td>¥1999.0</td>
-                        
-                        <td>1</td>
-                        <td>¥1999.0</td>
-                        <td>
-                            <button class="btn btn-danger">删除</button>
-                        </td>
-                    </tr>
+                    <tbody>
+                        <tr>
+                            <!-- <td><input type="checkbox"></td>
+                            <td>
+                                <img class="img-thumbnail" src="https://res.vmallres.com/pimages//display/10086232069466/800_800_b_web7563196BA57456F841F1EE117166F4545A7592C0574ECEBA.jpg" alt="">
+                            </td>
+                            <td class="car-deatil">HUAWEI nova 8 8GB+128GB 全网通版（亮黑色）</td>
+                            <td>1</td>
+                            <td>¥ 3299.00</td>
+                            <td>¥ 3299.00</td>
+                            <td>
+                                <button class="btn btn-danger">删除</button>
+                            </td> -->
+                        </tr>
+                    </tbody>
                 </table>
             </div>
         </div>
     </div>
-    
+    <script>
+         function getCart(){
+            var list = localStorage.getItem('cart')||"[]"; //字符串
+            return JSON.parse(list);
+        }
+        function setCart(arr){
+            localStorage.setItem('cart',JSON.stringify(arr))
+        }
+        showList()
+        function showList(){
+            var productList = getCart();
+            $.each(productList,function(index,product){
+                if(productList.length<1){
+                    $('tbody').hide();
+                    $('h2').show();
+                    return;
+                }
+                $('tbody').empty();
+                $('table').show();
+                $('h2').hide();
+                $('tbody').append(`<tr>
+                                <td><input type="checkbox"></td>
+                                <td>
+                                    <img class="img-thumbnail" src="${product.product_img}" alt="">
+                                </td>
+                                <td class="car-deatil">${product.product_name}</td>
+                                <td>${product.product_num}</td>
+                                <td>${product.product_price}</td>
+                                <td>¥ 3299.00</td>
+                                <td>
+                                    <button class="btn btn-danger">删除</button>
+                                </td>
+                            </tr>`)
+            })
+        }
+    </script>
     <!-- 结算 -->
     <div id="pay">
         <div class="pay_inner container">
@@ -114,37 +136,10 @@
                     <span>¥&nbsp;0.00</span>
                 </div>
             </div>
-        </div>
-
-       
+        </div>      
     </div>
 <!-- 分割 -->
 <div id="hr-10"></div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <!-- 脚部 -->
     <div id="footer">
         <div class="footer_inner container">
@@ -330,5 +325,7 @@
                 </div>
             </div>
 </body>
+
+
 
 </html>

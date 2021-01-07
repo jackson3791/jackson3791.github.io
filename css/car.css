@@ -457,7 +457,7 @@
     margin: 0 auto;
     color: #666;
     line-height: 1.5;
-    height: 111px;
+    min-height: ;
 }
 
 .footer_inner3_inner .p1{
@@ -534,4 +534,11 @@
 .footer_inner3_inner .fl>strong>a{
     color: #a4a4a4;
     font-size: 12px;
+}
+
+#cartin{
+    position: absolute;
+    width: 20px;
+    height: 50px;
+    background: red;
 }

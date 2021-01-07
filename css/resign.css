@@ -1,5 +1,5 @@
 .container{
-    width: 1200px;
+    min-width: 1200px;
     margin: 0 auto;
 }
 
@@ -289,7 +289,7 @@
     width: 68px;
 }
 
-.main_inputbox>button{
+#reg{
     width: 308px;
     height: 48px;
     line-height: 48px;
@@ -299,4 +299,15 @@
     border: 1px solid #ececec;
     border-radius: 6px;
     background: #9fceff;
+}
+
+.main_inputbox>div{
+    position: relative;
+}
+
+#resign_tip{
+    position: absolute;
+    bottom: -24px;
+    left: 0;
+    color: red;
 }

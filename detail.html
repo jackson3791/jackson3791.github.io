@@ -233,12 +233,12 @@
                         </div>
                         <div class="counttime">
                             <div class="cart-ac">
-                                <input type="text" placeholder="1">
+                                <input type="text" placeholder="1" id="buynumber">
                                 <span class="cart-add">+</span>
                                 <span class="cart-cut">-</span>
                             </div>
-                            <div class="cart-link">
-                                <a href="">加入购物车</a>
+                            <div class="cart-link" >
+                                <a href="./car.html" id="cartin" data-img="https://res.vmallres.com/pimages//display/10086232069466/800_800_b_web7563196BA57456F841F1EE117166F4545A7592C0574ECEBA.jpg" data-name="HUAWEI nova 8 8GB+128GB 全网通版（亮黑色）" data-price="3299.0" data-num="1">加入购物车</a>
                             </div>
                             <div class="countdowntime">
                                 
@@ -250,39 +250,28 @@
         </div>
     </div>
 <script src="./js/countdown.js"></script> 
-<script src="./js/cart-ac.js"></script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!-- <script src="./js/cart-ac.js"></script> -->
+<script>
+    function getCart(){
+       var list = localStorage.getItem('cart')||"[]"
+        return JSON.parse(list)
+    }
+    function setCart(arr){
+        localStorage.setItem('cart',JSON.stringify(arr))
+    }
+    $('#cartin').click(function(){
+        console.log(1)
+        var  newProduct ={
+            product_img:$('#cartin').data('img'),
+            product_name:$('#cartin').data('name'),
+            product_price:$('#cartin').data('price'),
+            product_num:$('#cartin').data('num')
+        };
+        var productList =getCart();
+        productList.push(newProduct);
+        setCart(newProduct)
+    })
+</script>
     <!-- 脚部 -->
     <div id="footer">
         <div class="footer_inner container">
