@@ -57,7 +57,8 @@
             <!-- <div class="car-title"></div> -->
             <div class="car-form">
                 <table class="table">
-                    <tr class="success car-title info">
+                    <tbody>
+                    <!-- <tr class="success car-title info">
                         <th><input type="checkbox"></th>
                         <th>全选</th>
                         <th>商品</th>
@@ -65,9 +66,8 @@
                         <th>单价</th>
                         <th>小计</th>
                         <th>操作</th>
-                    </tr>
-                    <tbody>
-                        <tr>
+                    </tr> -->
+                        <!-- <tr> -->
                             <!-- <td><input type="checkbox"></td>
                             <td>
                                 <img class="img-thumbnail" src="https://res.vmallres.com/pimages//display/10086232069466/800_800_b_web7563196BA57456F841F1EE117166F4545A7592C0574ECEBA.jpg" alt="">
@@ -79,8 +79,9 @@
                             <td>
                                 <button class="btn btn-danger">删除</button>
                             </td> -->
-                        </tr>
+                        <!-- </tr> -->
                     </tbody>
+                   
                 </table>
             </div>
         </div>
@@ -105,7 +106,18 @@
                 $('tbody').empty();
                 $('table').show();
                 $('h2').hide();
-                $('tbody').append(`<tr>
+                $('tbody').append(
+                    `
+                    <tr class="success car-title info">
+                        <th><input type="checkbox"></th>
+                        <th>全选</th>
+                        <th>商品</th>
+                        <th>数量</th>
+                        <th>单价</th>
+                        <th>小计</th>
+                        <th>操作</th>
+                    </tr>
+                    <tr>
                                 <td><input type="checkbox"></td>
                                 <td>
                                     <img class="img-thumbnail" src="${product.product_img}" alt="">
@@ -117,9 +129,14 @@
                                 <td>
                                     <button class="btn btn-danger">删除</button>
                                 </td>
-                            </tr>`)
+                    </tr>`)
             })
         }
+
+        // 2 用户点击+或者-可以修改当前商品的数量
+        
+        // 3 用户点击删除可以删除当前商品,删除完成后要重新渲染table/h2
+        
     </script>
     <!-- 结算 -->
     <div id="pay">

@@ -542,3 +542,7 @@
     height: 50px;
     background: red;
 }
+
+.car-form {
+    min-height: 158px;
+}
