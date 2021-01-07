@@ -11,9 +11,9 @@ function showList(){
     console.log(productList)
     $('tbody').empty();
     $.each(productList,function(index,product){
+        console.log(productList)
         if(productList.length<1){
-            $('tbody').hide();
-            $('thead').hide();
+            $('table').hide();
             $('h2').show();
             return;
         }
