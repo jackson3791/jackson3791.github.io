@@ -11,7 +11,7 @@ function showList(){
                 $.each(res,function(index,sell1){
                     $('.sell1_inner>ul').append(
                         `<li>
-                        <a href="#">
+                        <a href="./detail.html">
                             <img src="${sell1.sell1_img}" alt="">
                         </a>
                     </li>`) 

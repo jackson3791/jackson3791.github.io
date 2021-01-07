@@ -13,6 +13,7 @@ function showList(){
     $.each(productList,function(index,product){
         if(productList.length<1){
             $('tbody').hide();
+            $('thead').hide();
             $('h2').show();
             return;
         }
@@ -44,6 +45,6 @@ $("#allCheckBok").click(function() {
 });   
 
         // 2 用户点击+或者-可以修改当前商品的数量
-        
+ 
         // 3 用户点击删除可以删除当前商品,删除完成后要重新渲染table/h2
         

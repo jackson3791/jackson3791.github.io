@@ -11,7 +11,7 @@ function showList(){
                 $.each(res,function(index,sell2_2){
                     $('.sell2_bigbox>ul').append(`
                     <li class="grid-items">
-                    <a href="" class="thumb">
+                    <a href="./detail.html" class="thumb">
                         <p class="grid-img">
                             <img src="${sell2_2.sell2_img2}" alt="">
                         </p>
