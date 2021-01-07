@@ -58,30 +58,7 @@
             <div class="car-form">
                 <table class="table">
                     <tbody>
-                    <!-- <tr class="success car-title info">
-                        <th><input type="checkbox"></th>
-                        <th>全选</th>
-                        <th>商品</th>
-                        <th>数量</th>
-                        <th>单价</th>
-                        <th>小计</th>
-                        <th>操作</th>
-                    </tr> -->
-                        <!-- <tr> -->
-                            <!-- <td><input type="checkbox"></td>
-                            <td>
-                                <img class="img-thumbnail" src="https://res.vmallres.com/pimages//display/10086232069466/800_800_b_web7563196BA57456F841F1EE117166F4545A7592C0574ECEBA.jpg" alt="">
-                            </td>
-                            <td class="car-deatil">HUAWEI nova 8 8GB+128GB 全网通版（亮黑色）</td>
-                            <td>1</td>
-                            <td>¥ 3299.00</td>
-                            <td>¥ 3299.00</td>
-                            <td>
-                                <button class="btn btn-danger">删除</button>
-                            </td> -->
-                        <!-- </tr> -->
                     </tbody>
-                   
                 </table>
             </div>
         </div>
@@ -97,13 +74,14 @@
         showList()
         function showList(){
             var productList = getCart();
+            console.log(productList)
+            $('tbody').empty();
             $.each(productList,function(index,product){
                 if(productList.length<1){
                     $('tbody').hide();
                     $('h2').show();
                     return;
                 }
-                $('tbody').empty();
                 $('table').show();
                 $('h2').hide();
                 $('tbody').append(
