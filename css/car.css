@@ -201,13 +201,15 @@
 }
 
 #pay{
-    height: 60px;
+    height: 70px;
     background: #f5f5f5;
+    padding-top: 10px;
 }
 
 .pay_inner{
     background: #fff;
     height: 60px;
+    
 }
 
 
