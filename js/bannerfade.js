@@ -26,3 +26,9 @@
         },function() {
             mySwiper.autoplay.start(); //鼠标移出之后，自动轮播开启
         })
+        $('.swiper-container').mouseenter(function(){
+            mySwiper.autoplay.stop();
+        })
+        $('.swiper-container').mouseleave(function(){
+            mySwiper.autoplay.start();
+        })

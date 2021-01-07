@@ -57,65 +57,24 @@
             <!-- <div class="car-title"></div> -->
             <div class="car-form">
                 <table class="table">
-                    <tbody>
+                    <thead>
+                        <tr class="success car-title info">
+                            <th><input type="checkbox" id="allCheckBok"></th>
+                            <th>全选</th>
+                            <th>商品</th>
+                            <th>数量</th>
+                            <th>单价</th>
+                            <th>小计</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>  
                     </tbody>
                 </table>
             </div>
         </div>
     </div>
-    <script>
-         function getCart(){
-            var list = localStorage.getItem('cart')||"[]"; //字符串
-            return JSON.parse(list);
-        }
-        function setCart(arr){
-            localStorage.setItem('cart',JSON.stringify(arr))
-        }
-        showList()
-        function showList(){
-            var productList = getCart();
-            console.log(productList)
-            $('tbody').empty();
-            $.each(productList,function(index,product){
-                if(productList.length<1){
-                    $('tbody').hide();
-                    $('h2').show();
-                    return;
-                }
-                $('table').show();
-                $('h2').hide();
-                $('tbody').append(
-                    `
-                    <tr class="success car-title info">
-                        <th><input type="checkbox"></th>
-                        <th>全选</th>
-                        <th>商品</th>
-                        <th>数量</th>
-                        <th>单价</th>
-                        <th>小计</th>
-                        <th>操作</th>
-                    </tr>
-                    <tr>
-                                <td><input type="checkbox"></td>
-                                <td>
-                                    <img class="img-thumbnail" src="${product.product_img}" alt="">
-                                </td>
-                                <td class="car-deatil">${product.product_name}</td>
-                                <td>${product.product_num}</td>
-                                <td>${product.product_price}</td>
-                                <td>¥ 3299.00</td>
-                                <td>
-                                    <button class="btn btn-danger">删除</button>
-                                </td>
-                    </tr>`)
-            })
-        }
-
-        // 2 用户点击+或者-可以修改当前商品的数量
-        
-        // 3 用户点击删除可以删除当前商品,删除完成后要重新渲染table/h2
-        
-    </script>
+    <script src="./js/car-incar.js"></script>
     <!-- 结算 -->
     <div id="pay">
         <div class="pay_inner container">

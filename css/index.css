@@ -236,6 +236,7 @@
     left: -360px;
     border-bottom-right-radius:1400px 60px;
     border-bottom-left-radius:1400px 60px;
+    cursor: pointer;
 }
 
 
