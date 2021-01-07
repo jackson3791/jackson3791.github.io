@@ -7,7 +7,7 @@ var  sell3_li = $('.sell3_box>ul').find('li');
         $('.btn-prev').hide();
         $('.sell3_box>.btn-next').click(function(){
             sell3_ul.index ++;
-            
+            $('.btn-prev').show();
             $(".sell3_box>ul").animate({
                 "marginLeft": -(sell3_ul.index*width)
             },500)
@@ -21,6 +21,7 @@ var  sell3_li = $('.sell3_box>ul').find('li');
     
         $('.sell3_box>.btn-prev').click(function(){
             sell3_ul.index--;
+            $('.btn-next').show();
             $(".sell3_box>ul").animate({
                 "marginLeft": -(sell3_ul.index*width)
             },500)

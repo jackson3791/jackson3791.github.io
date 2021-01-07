@@ -1028,7 +1028,6 @@
 .counttime .cart-ac span{
     float: left;
     color: #c4c4c4;
-    cursor: not-allowed;
     border-bottom: 1px solid #e2e2e2;
     display: block;
     font-size: 16px;
@@ -1039,6 +1038,7 @@
     font-weight: bold;
     border-left: 1px solid #e2e2e2;
     background: #fff;
+    cursor: pointer;
 }
 
 .counttime .cart-ac span:nth-of-type(1){
