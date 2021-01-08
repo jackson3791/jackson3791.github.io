@@ -48,49 +48,5 @@ console.log(spanArr)
 
 	}
 
-	//3 在点击submit按钮的时候,会触发form的默认的提交事件
-	var form = document.querySelector('form');
-	form.onsubmit = function(e){
-		//点击提交,再次监测用户和密码是否合格,如果有一个不合格,就不跳转
-		if(!(checkUsername()&&checkPassword())){
-			//阻止表单的默认提交
-			e = window.event||e;
-			e.preventDefault?e.preventDefault():e.returnValue=false;
-		}// 注册
-        $('#reg').click(function(){
-            $.ajax({
-                url:"./api/login.json",
-                data:{
-                    un:$('#un').val(),
-                    pw:$('#pw').val()
-                },
-                dataType:'json',
-                success:function(res){
-                    if(res.code==1){
-                        // 注册成功，信息添加到本地存储，方便同域名下的其他页面访问
-                        localStorage.setItem('name',$('#un').val());
-                        location.href = "./cart.html"
-                    }
-                }
-            })
-		})
-		// 登录
-        $('#log').click(function(){
-            $.ajax({
-                url:"./api/login.json",
-                data:{
-                    un:$('#un').val(),
-                    pw:$('#pw').val()
-                },
-                dataType:"json",
-                success:function(res){
-                    if(res.code==1){
-                        // 登录成功，信息添加到本地存储，方便同域名下的其他页面访问
-                        localStorage.setItem('name',$('#un').val());
-                        location.href = "./cart.html"
-                    }
-                }
-            })
-        })
-		
-	}
+	
+	

@@ -549,3 +549,18 @@ h2{
     font-size: 24px;
     text-align: center;
 }
+
+.adtr>td>span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    color: black;
+    font-size: 20px;
+    line-height: 20px;
+    margin-right: 5px;
+    font-weight: bold;
+    border: 1px solid gray;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+}
